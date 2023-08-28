@@ -1,4 +1,3 @@
-
 const Navbar = () => {
   return (
     <div className="navbar bg-primary text-white">
@@ -22,25 +21,39 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary rounded-none w-52"
           >
+            <li>
+              <a>Home</a>
+            </li>
             <li>
               <a>Product</a>
             </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
+            <li tabIndex={0}>
+            <details>
+              <summary>Category</summary>
+              <ul className="p-2 bg-primary w-42 rounded-none">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>CPU/Processor</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Motherboard</a>
+                </li>
+                <li>
+                  <a>RAM</a>
+                </li>
+                <li>
+                  <a>Power Supply Unit</a>
+                </li>
+                <li>
+                  <a>Storage Device</a>
+                </li>
+                <li>
+                  <a>Monitor</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            </details>
+          </li>
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
@@ -72,6 +85,9 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a>Storage Device</a>
+                </li>
+                <li>
+                  <a>Monitor</a>
                 </li>
               </ul>
             </details>
