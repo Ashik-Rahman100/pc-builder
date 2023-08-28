@@ -14,7 +14,7 @@ const Category = ({categories}) => {
           >
             <Link href={`/categories/${categoryObj.category}`}>
               <figure>
-                <img src={categoryObj.image} alt="category" />
+                <img src={categoryObj.image} height={300} width={300} alt="category" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{categoryObj.category}</h2>
