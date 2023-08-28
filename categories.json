@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://www.startech.com.bd/image/cache/catalog/cpu-cooler/corsair/icue-elite-cpu-cooler-lcd-display-white/icue-elite-cpu-cooler-lcd-display-white-01-500x500.webp",
+    "productName": "Intel Core i7-11700K",
+    "category": "Processor"
+  },
+  {
+    "image": "https://www.startech.com.bd/image/cache/catalog/Motherboard/Gigabyte/Gigabyte%20GA-H110M%20S2PH-DDR4-500x500.jpg",
+    "productName": "ASUS ROG Strix Z590-E",
+    "category": "Motherboard"
+  },
+  {
+    "image": "https://www.startech.com.bd/image/cache/catalog/ram/cosair/vengeance-8gb-ddr4-3200mhz/vengeance-8gb-ddr4-3200mhz-01-500x500.webp",
+    "productName": "Corsair Vengeance RGB Pro 16GB",
+    "category": "RAM"
+  },
+  {
+    "image": "https://www.startech.com.bd/image/cache/catalog/power-supply/gamdias/kratos-m1-750b/kratos-m1-750b-01-500x500.jpg",
+    "productName": "EVGA SuperNOVA 750 G+",
+    "category": "Power Supply Unit"
+  },
+  {
+    "image": "https://www.startech.com.bd/image/cache/catalog/networking/router/asus/ac1500/ac59u-1-500x500.jpg",
+    "productName": "Samsung 970 EVO Plus 500GB NVMe SSD",
+    "category": "Storage Device"
+  },
+  {
+    "image": "https://www.startech.com.bd/image/cache/catalog/monitor/philips/193v/193v-228x228.png",
+    "productName": "ASUS ROG Swift PG279Q 27",
+    "category": "Monitor"
+  }
+]

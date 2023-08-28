@@ -22,12 +22,13 @@ export const getStaticProps = async () =>{
   const suffleData = allData.sort(() => 0.5 - Math.random());
   const randProduct = suffleData.slice(0, 6)
 
-  const categoryRes = await fetch('http://localhost:5000/products');
+  const categoryRes = await fetch('http://localhost:3000/api/categories');
   const categoryData = await categoryRes.json();
+  // console.log(categoryData);
   return{
     props:{
       randProduct: randProduct,
-      categories:categoryData,
+      categories:categoryData.data,
     },
     revalidate:10,
   }

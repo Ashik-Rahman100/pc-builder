@@ -15,7 +15,7 @@ const CategoriesProduct = ({ products }) => {
         <div className="min-h-screen">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-20 justify-items-center">
                 {
-                    filteredProducts.map(product => <div key={product.id} className="card w-96 glass">
+                    filteredProducts.map(product => <div key={product._id} className="card w-96 glass">
                         <figure>
                             <img src={product.image} alt="product" /></figure>
                         <div className="card-body">
