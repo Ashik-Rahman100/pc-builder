@@ -17,7 +17,7 @@ const Banner = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Build - PC</button>
+          <button className="btn btn-outline btn-success">Build - PC</button>
         </div>
       </div>
     </div>

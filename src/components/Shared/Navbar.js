@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-primary text-white">
+    <div className="navbar bg-base-200 ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,81 +23,100 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary rounded-none w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-none w-52"
           >
             <li>
-            <Link href='/'>Home</Link>
-          </li>
-          <li>
-            <Link href='/products'>Product</Link>
-          </li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/products">Product</Link>
+            </li>
             <li tabIndex={0}>
-            <details>
-              <summary>Category</summary>
-              <ul className="p-2 bg-primary w-42 rounded-none">
-                <li>
-                  <Link href='/categories/Processor'>CPU/Processor</Link>
-                </li>
-                <li>
-                  <Link href='/categories/Motherboard'>Motherboard</Link>
-                </li>
-                <li>
-                  <Link href='/categories/RAM'>RAM</Link>
-                </li>
-                <li>
-                  <Link href='/categories/Power Supply Unit'>Power Supply Unit</Link>
-                </li>
-                <li>
-                  <Link href='/categories/Storage Device'>Storage Device</Link>
-                </li>
-                <li>
-                  <Link href='/categories/Monitor'>Monitor</Link>
-                </li>
-              </ul>
-            </details>
-          </li>
+              <details>
+                <summary>Category</summary>
+                <ul className="p-2 bg-base-200 w-42 rounded-none">
+                  <li>
+                    <Link href="/categories/Processor">CPU/Processor</Link>
+                  </li>
+                  <li>
+                    <Link href="/categories/Motherboard">Motherboard</Link>
+                  </li>
+                  <li>
+                    <Link href="/categories/RAM">RAM</Link>
+                  </li>
+                  <li>
+                    <Link href="/categories/Power Supply Unit">
+                      Power Supply Unit
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/categories/Storage Device">
+                      Storage Device
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/categories/Monitor">Monitor</Link>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <Link href="/build" className="btn btn-outline btn-accent  btn-sm text-white">
+                build pc
+              </Link>
+            </li>
           </ul>
         </div>
-        <Link href='/' className="btn btn-ghost normal-case text-xl">PC Builder</Link>
+        <Link href="/" className="btn btn-ghost normal-case text-xl">
+          PC Builder
+        </Link>
       </div>
       {/* Desktop View */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link href='/'>Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href='/products'>Product</Link>
+            <Link href="/products">Product</Link>
           </li>
+
           <li tabIndex={0} className="z-10">
             <details>
               <summary>Category</summary>
-              <ul className="p-2 bg-primary w-42 rounded-none">
+              <ul className="p-2 bg-base-200 w-42 rounded-none">
                 <li>
-                  <Link href='/categories/Processor'>CPU/Processor</Link>
+                  <Link href="/categories/Processor">CPU/Processor</Link>
                 </li>
                 <li>
-                  <Link href='/categories/Motherboard'>Motherboard</Link>
+                  <Link href="/categories/Motherboard">Motherboard</Link>
                 </li>
                 <li>
-                  <Link href='/categories/RAM'>RAM</Link>
+                  <Link href="/categories/RAM">RAM</Link>
                 </li>
                 <li>
-                  <Link href='/categories/Power Supply Unit'>Power Supply Unit</Link>
+                  <Link href="/categories/Power Supply Unit">
+                    Power Supply Unit
+                  </Link>
                 </li>
                 <li>
-                  <Link href='/categories/Storage Device'>Storage Device</Link>
+                  <Link href="/categories/Storage Device">Storage Device</Link>
                 </li>
                 <li>
-                  <Link href='/categories/Monitor'>Monitor</Link>
+                  <Link href="/categories/Monitor">Monitor</Link>
                 </li>
               </ul>
             </details>
           </li>
+
+            <Link href="/build" className="btn btn-outline btn-success btn-sm text-white">
+              build pc
+            </Link>
+          
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-outline text-white">Build-Pc</a>
+        <a className="btn btn-outline btn-sm btn-success text-white">Signin</a>
       </div>
     </div>
   );
