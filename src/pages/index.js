@@ -1,11 +1,13 @@
 import Banner from "@/components/UI/Home/Banner";
+import Category from "@/components/UI/Home/Category";
 import Product from "@/components/UI/Home/Product";
 
-const HomePage = ({randProduct}) => {
+const HomePage = ({randProduct,categories}) => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Banner />
       <Product randProduct={randProduct} />
+      <Category categories={categories} />
     </div>
   );
 };
@@ -13,16 +15,21 @@ const HomePage = ({randProduct}) => {
 export default HomePage;
 
 export const getStaticProps = async () =>{
-  const res = await fetch('http://localhost:5000/products');
+  const res = await fetch('http://localhost:3000/api/products');
   const data = await res.json();
   // console.log(data);
-  const suffleData = data.sort(() => 0.5 - Math.random());
+  const allData = data.data
+  const suffleData = allData.sort(() => 0.5 - Math.random());
   const randProduct = suffleData.slice(0, 6)
 
+  const categoryRes = await fetch('http://localhost:5000/products');
+  const categoryData = await categoryRes.json();
   return{
     props:{
       randProduct: randProduct,
+      categories:categoryData,
     },
-    
+    revalidate:10,
   }
+  
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 const Product = ({randProduct}) => {
   return (
     <div>
-      <h1 className="text-6xl text-center my-6">Our Product</h1>
+      <h1 className="text-6xl text-center my-8">Our Product</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4">
         {
             randProduct.map((product) => <div key={product?.id} className="card w-96 bg-base-100 shadow-xl">
@@ -15,7 +15,7 @@ const Product = ({randProduct}) => {
                 <p>status: {product?.status}</p>
                 <p>rating: {product?.rating}</p>
                 <div className="card-actions">
-                    <Link href={`/details/${product._id}`} className="btn btn-accent tracking-widest">View Details</Link>
+                    <Link href={`/details/${product.id}`} className="btn btn-accent tracking-widest">View Details</Link>
                 </div>
             </div>
         </div>)
