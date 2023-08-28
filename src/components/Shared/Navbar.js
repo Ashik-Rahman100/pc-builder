@@ -56,7 +56,7 @@ const Navbar = () => {
           </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">PC Builder</a>
       </div>
       {/* Desktop View */}
       <div className="navbar-center hidden lg:flex">
@@ -67,7 +67,7 @@ const Navbar = () => {
           <li>
             <a>Product</a>
           </li>
-          <li tabIndex={0}>
+          <li tabIndex={0} className="z-10">
             <details>
               <summary>Category</summary>
               <ul className="p-2 bg-primary w-42 rounded-none">
