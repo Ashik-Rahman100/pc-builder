@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-primary text-white">
@@ -24,70 +26,70 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary rounded-none w-52"
           >
             <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Product</a>
-            </li>
+            <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='/products'>Product</Link>
+          </li>
             <li tabIndex={0}>
             <details>
               <summary>Category</summary>
               <ul className="p-2 bg-primary w-42 rounded-none">
                 <li>
-                  <a>CPU/Processor</a>
+                  <Link href='/categories/Processor'>CPU/Processor</Link>
                 </li>
                 <li>
-                  <a>Motherboard</a>
+                  <Link href='/categories/Motherboard'>Motherboard</Link>
                 </li>
                 <li>
-                  <a>RAM</a>
+                  <Link href='/categories/RAM'>RAM</Link>
                 </li>
                 <li>
-                  <a>Power Supply Unit</a>
+                  <Link href='/categories/Power Supply Unit'>Power Supply Unit</Link>
                 </li>
                 <li>
-                  <a>Storage Device</a>
+                  <Link href='/categories/Storage Device'>Storage Device</Link>
                 </li>
                 <li>
-                  <a>Monitor</a>
+                  <Link href='/categories/Monitor'>Monitor</Link>
                 </li>
               </ul>
             </details>
           </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">PC Builder</a>
+        <Link href='/' className="btn btn-ghost normal-case text-xl">PC Builder</Link>
       </div>
       {/* Desktop View */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <Link href='/'>Home</Link>
           </li>
           <li>
-            <a>Product</a>
+            <Link href='/products'>Product</Link>
           </li>
           <li tabIndex={0} className="z-10">
             <details>
               <summary>Category</summary>
               <ul className="p-2 bg-primary w-42 rounded-none">
                 <li>
-                  <a>CPU/Processor</a>
+                  <Link href='/categories/Processor'>CPU/Processor</Link>
                 </li>
                 <li>
-                  <a>Motherboard</a>
+                  <Link href='/categories/Motherboard'>Motherboard</Link>
                 </li>
                 <li>
-                  <a>RAM</a>
+                  <Link href='/categories/RAM'>RAM</Link>
                 </li>
                 <li>
-                  <a>Power Supply Unit</a>
+                  <Link href='/categories/Power Supply Unit'>Power Supply Unit</Link>
                 </li>
                 <li>
-                  <a>Storage Device</a>
+                  <Link href='/categories/Storage Device'>Storage Device</Link>
                 </li>
                 <li>
-                  <a>Monitor</a>
+                  <Link href='/categories/Monitor'>Monitor</Link>
                 </li>
               </ul>
             </details>
