@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Category = ({categories}) => {
-    console.log('category ==>',categories);
+    // console.log('category ==>',categories);
   return (
     <div className="mt-24 mb-12">
       <h2 className="text-6xl  font-bold text-center my-8 tracking-widest">

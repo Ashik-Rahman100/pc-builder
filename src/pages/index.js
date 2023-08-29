@@ -15,19 +15,19 @@ const HomePage = ({randProduct,categories}) => {
 export default HomePage;
 
 export const getStaticProps = async () =>{
-  const res = await fetch('http://localhost:3000/api/products');
+  const res = await fetch("http://localhost:3000/api/products");
   const data = await res.json();
-  // console.log(data);
-  const allData = data.data
-  const suffleData = allData.sort(() => 0.5 - Math.random());
-  const randProduct = suffleData.slice(0, 6)
+  // console.log(data, "data ==>");
+  const allProducts = data.data;
+  const shuffledData = allProducts.sort(() => 0.5 - Math.random());
+  const randomProducts = shuffledData.slice(0, 6);
 
   const categoryRes = await fetch('http://localhost:3000/api/categories');
   const categoryData = await categoryRes.json();
   // console.log(categoryData);
   return{
     props:{
-      randProduct: randProduct,
+      randProduct: randomProducts,
       categories:categoryData.data,
     },
     revalidate:10,
