@@ -65,7 +65,7 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <Link href="/build" className="btn btn-outline btn-accent  btn-sm text-white">
+              <Link href="/pc-builder" className="btn btn-outline btn-accent  btn-sm text-white">
                 build pc
               </Link>
             </li>
@@ -113,7 +113,7 @@ const Navbar = () => {
             </details>
           </li>
 
-            <Link href="/build" className="btn btn-outline btn-success btn-sm text-white">
+            <Link href="/pc-builder" className="btn btn-outline btn-success btn-sm text-white">
               build pc
             </Link>
           
