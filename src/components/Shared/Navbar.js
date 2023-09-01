@@ -1,9 +1,8 @@
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
-
 const Navbar = () => {
-  const {data:session} = useSession();
+  const { data: session } = useSession();
   console.log(session);
   return (
     <div className="navbar bg-base-200 ">
@@ -65,7 +64,10 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <Link href="/pc-builder" className="btn btn-outline btn-accent  btn-sm text-white">
+              <Link
+                href="/pc-builder"
+                className="btn btn-outline btn-accent  btn-sm text-white"
+              >
                 build pc
               </Link>
             </li>
@@ -113,15 +115,30 @@ const Navbar = () => {
             </details>
           </li>
 
-            <Link href="/pc-builder" className="btn btn-outline btn-success btn-sm text-white">
-              build pc
-            </Link>
-          
+          <Link
+            href="/pc-builder"
+            className="btn btn-outline btn-success btn-sm text-white"
+          >
+            build pc
+          </Link>
         </ul>
       </div>
       <div className="navbar-end">
-        {session?.user?.email ?<button onClick={() => signOut ()} className="btn btn-outline btn-sm btn-success text-white">Log Out</button>
-        :<Link href='/login' className="btn btn-outline btn-sm btn-success text-white">Signin</Link>}
+        {session?.user?.email ? (
+          <button
+            onClick={() => signOut()}
+            className="btn btn-outline btn-sm btn-success text-white"
+          >
+            Log Out
+          </button>
+        ) : (
+          <Link
+            href="/login"
+            className="btn btn-outline btn-sm btn-success text-white"
+          >
+            Signin
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -7,14 +7,14 @@ const AddBuilder = ({products}) => {
   const router = useRouter();
   const category = router.query.addBuilder;
 //   console.log("category ==>",category)
-  console.log("products ==>",products)
+  // console.log("products ==>",products)
 
 
   const filteredProducts = products?.filter(
     (product) => product.category === category
   );
 
-  console.log("filters product ==>",filteredProducts);
+  // console.log("filters product ==>",filteredProducts);
   const dispatch = useDispatch();
 
   const handleAddToBuilder = (selectedCategory, selectedComponent) => {
@@ -62,7 +62,7 @@ export const getServerSideProps = async () => {
 
     const res = await fetch("http://localhost:3000/api/products");
     const data = await res.json();
-    console.log("Data", data)
+    // console.log("Data", data)
     const allProducts = data.data;
 
     return {
