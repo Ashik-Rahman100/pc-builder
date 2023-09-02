@@ -40,7 +40,7 @@ const LoginPage = () => {
         <button
           onClick={() =>
             signIn("google", {
-              callbackUrl: "http://localhost:3000/",
+              callbackUrl: "https://pc-builder-two-black.vercel.app/",
             })
           }
           className="uppercase btn btn-outline text-sm"
@@ -50,7 +50,7 @@ const LoginPage = () => {
         <button
           onClick={() =>
             signIn("github", {
-              callbackUrl: "http://localhost:3000/",
+              callbackUrl: "https://pc-builder-two-black.vercel.app/",
             })
           }
           className="uppercase btn btn-outline text-sm mt-4"

@@ -1,6 +1,6 @@
-## live-link:
+## live-link: https://pc-builder-two-black.vercel.app/
 
-### Feature
+### Key Features
 
 - PC-builder tool: User can build own custom pc.like motherboard,ram,cpu,monitor etc.
 - Featured product on home page: Home page shows 6 random pc components.Each products display Product name,category, price, status, rating

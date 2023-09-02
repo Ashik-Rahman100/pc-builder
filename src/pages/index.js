@@ -15,14 +15,14 @@ const HomePage = ({randProduct,categories}) => {
 export default HomePage;
 
 export const getStaticProps = async () =>{
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("https://pc-builder-two-black.vercel.app/api/products");
   const data = await res.json();
   // console.log(data, "data ==>");
   const allProducts = data.data;
   const shuffledData = allProducts.sort(() => 0.5 - Math.random());
   const randomProducts = shuffledData.slice(0, 6);
 
-  const categoryRes = await fetch('http://localhost:3000/api/categories');
+  const categoryRes = await fetch('https://pc-builder-two-black.vercel.app/api/categories');
   const categoryData = await categoryRes.json();
   // console.log(categoryData);
   return{

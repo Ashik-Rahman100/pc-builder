@@ -60,7 +60,7 @@ export default ProductDetailPage;
 
 //SSG
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("https://pc-builder-two-black.vercel.app/api/products");
   const products = await res.json();
   const allProducts = products.data;
   const paths = allProducts.map((product) => ({
@@ -74,7 +74,7 @@ export const getStaticProps = async (context) => {
   const { params } = context;
 
   const res = await fetch(
-    `http://localhost:3000/api/products?id=${params.productId}`
+    `https://pc-builder-two-black.vercel.app/api/products?id=${params.productId}`
   );
   const data = await res.json();
   console.log(data);

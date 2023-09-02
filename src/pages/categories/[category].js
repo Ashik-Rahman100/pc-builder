@@ -40,7 +40,7 @@ export default CategoriesProduct;
 //SSR
 export const getServerSideProps = async () => {
 
-    const res = await fetch("http://localhost:3000/api/products");
+    const res = await fetch("https://pc-builder-two-black.vercel.app/api/products");
     const data = await res.json();
     const allProducts = data.data;
 
